@@ -2,10 +2,10 @@ package com.poly.hangnt169.repository;
 
 import com.poly.hangnt169.entity.SanPham;
 import com.poly.hangnt169.util.HibernateUtil;
+import jakarta.persistence.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +13,7 @@ import java.util.List;
  * @author hangnt169
  */
 public class SanPhamRepository {
+
     public List<SanPham> getAll() {
         List<SanPham> lops = new ArrayList<>();
         try (Session session = HibernateUtil.getFACTORY().openSession()) {
@@ -74,4 +75,5 @@ public class SanPhamRepository {
         }
         return false;
     }
+
 }

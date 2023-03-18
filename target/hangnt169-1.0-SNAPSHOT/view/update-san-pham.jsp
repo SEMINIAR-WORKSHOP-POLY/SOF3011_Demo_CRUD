@@ -22,7 +22,7 @@
     <section>
         <form action="/san-pham/update?id=${lopHoc.id}" method="post">
             <div class="row mt-4">
-                
+
                 <div class="col-6">
                     <label>Tên </label>
                     <input type="text" class="form-control" name="ten" value="${lopHoc.tenSanPham}"/>
